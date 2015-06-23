@@ -55,3 +55,16 @@ class Letter:
 
 if __name__ == "__main__":
     a = Letter('a')
+    print a
+
+    a += 1
+    print a
+
+    a -= 1
+    print a
+
+    a -= 2
+    print a
+
+    a += 2
+    print a
