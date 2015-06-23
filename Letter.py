@@ -1,4 +1,4 @@
-__author__ = 'colin'
+__author__ = 'Ethan Busbee'
 
 # Letter is intended to represent a single char in the alpha_output and to facilitate integer-based translations through
 # the alpha_output. It is only going to deal with all-lower or all-upper letters: it'll internally use uppercase letters.

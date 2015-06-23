@@ -1,4 +1,4 @@
-__author__ = 'colin'
+__author__ = 'Ethan Busbee'
 
 # CharNeuron is intended to take in a character,
 # mutate it by connecting with other CharNeurons,
