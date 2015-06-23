@@ -21,20 +21,26 @@ def convert(input):
 class Letter:
 
     def __init__(self, value = None):
-        print value
         self._value = convert(value)
 
     def __str__(self):
-        return alpha_output[self.getValue()]
+        return self.getLetter()
 
     def __add__(self, number):
-        if type(number) is type(int):
-            letter = Letter(self.getValue())
-            letter.translate(number)
-            return letter
+        letter = Letter(self.getLetter())
+        letter.translate(number)
+        return letter
+
+    def __sub__(self, number):
+        letter = Letter(self.getLetter())
+        letter.translate(number * -1)
+        return letter
 
     def getValue(self):
         return self._value
+
+    def getLetter(self):
+        return alpha_output[self.getValue()]
 
     def translate(self, amount = 0):
         self._value += amount
@@ -49,4 +55,3 @@ class Letter:
 
 if __name__ == "__main__":
     a = Letter('a')
-    b = Letter('b')
